@@ -1,0 +1,11 @@
+{
+    "host_url": "http://localhost:4723",
+    "platformName": "Android",
+    "platformVersion": "12.0",
+    "deviceName": "emulator-5554",
+    "automationName": "UiAutomator2",
+    "noReset": "true",
+    "fullReset": "false",
+    "appPackage": "com.android.settings",
+    "appActivity": ".Settings"
+}
