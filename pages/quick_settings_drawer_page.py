@@ -1,11 +1,13 @@
-from typing import final
-
-from locators.quick_settings_drawer_locators import QuickSettingsDrawer
-from pages.basic_actions import BasicActions
+from pages.basic_actions import *
 from utilities.exception_handlings import BluetoothNotPowerOn, BluetoothNotPowerOff
 
 
 class QuickSettingsPage(BasicActions):
+
+    internet_icon = (AppiumBy.ACCESSIBILITY_ID, "Internet")
+    bluetooth_icon = (AppiumBy.ACCESSIBILITY_ID, "Bluetooth.")
+    flashlight_icon = (AppiumBy.XPATH, '//android.widget.LinearLayout[@resource-id="com.android.systemui:id/quick_qs_panel"]/android.view.ViewGroup/android.widget.LinearLayout')
+    do_not_disturb_icon = (AppiumBy.ACCESSIBILITY_ID, "Do Not Disturb.")
 
     def __init__(self, driver):
         super().__init__(driver)

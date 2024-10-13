@@ -1,5 +1,3 @@
-import time
-
 import pytest
 from pages.home_page import HomePage
 from pages.quick_settings_drawer_page import QuickSettingsPage
